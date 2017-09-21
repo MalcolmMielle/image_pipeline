@@ -177,9 +177,9 @@ private:
 #endif
   StereoType current_stereo_algorithm_;
   // scratch buffers for speckle filtering
-  mutable cv::Mat_<uint32_t> labels_;
-  mutable cv::Mat_<uint32_t> wavefront_;
-  mutable cv::Mat_<uint8_t> region_types_;
+  mutable cv::Mat_<int> labels_;
+  mutable cv::Mat_<int> wavefront_;
+  mutable cv::Mat_<char> region_types_;
   // scratch buffer for dense point cloud
   mutable cv::Mat_<cv::Vec3f> dense_points_;
 };
